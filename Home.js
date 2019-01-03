@@ -5,7 +5,9 @@ export default class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>We have no friends!</Text>
+        <Text>
+          We have {this.props.screenProps.currentFriends.length} friends!
+        </Text>
         <Button
           title="Add some friends"
           onPress={this.props.navigation.navigate('Friends')}
